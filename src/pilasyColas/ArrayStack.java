@@ -27,28 +27,38 @@ public class ArrayStack<E> implements Stack<E> {
 		return (t+1);
 	}
 
+	// Si está vacío
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return (t == -1);
 	}
 
+	// Insertar datos
 	@Override
 	public void push(E e) {
-		// TODO Auto-generated method stub
-		
+		//1. Verificar si tiene un tamaño
+		if(size() == data.length) throw new IllegalStateException("La pila está llena");
+		// Si no está llena agrego el dato
+		data[++t]=e;
 	}
 
+	// Obtener el dato y se borra de la pila
 	@Override
 	public E pop() {
-		// TODO Auto-generated method stub
-		return null;
+		if(isEmpty()) return null;
+		// Crear objeto temporal y agregarle
+		E obj = data[t];
+		data[t] = null; // Borra el dato
+		t--; // Disminuye el espacio
+		return obj;
+		
 	}
-
+	
+	// Envia los datos sin borrarlos
 	@Override
 	public E top() {
-		// TODO Auto-generated method stub
-		return null;
+		if(isEmpty()) return null;
+		return data[t];
 	}
 
 }
