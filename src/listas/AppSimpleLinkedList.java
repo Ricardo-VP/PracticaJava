@@ -13,7 +13,7 @@ public class AppSimpleLinkedList {
 		//listaEnlazada.addFirst(12);
 		//listaEnlazada.addFirst(32);
 		//listaEnlazada.addFirst(55);
-		//listaEnlazada.addLast(45);
+		//listaEnlazada.addvLast(45);
 		
 		//System.out.println(listaEnlazada.last());
 	
@@ -41,7 +41,7 @@ public class AppSimpleLinkedList {
 		listaEnlazadaEstudiante.getAllEstudiantes();
 		System.out.println("El promedio de las edades es: " + listaEnlazadaEstudiante.promedio());
 		System.out.println("El numero de estudiantes mayores de 20 años es: " + listaEnlazadaEstudiante.mayores());
-		System.out.println("El estudiante con mayor edad tiene: " + listaEnlazadaEstudiante.obtenerMayor());
+		System.out.println("El estudiante con mayor edad tiene: " + listaEnlazadaEstudiante.obtenerMayor().mostrar());
 		entrada.close();
 	}
 

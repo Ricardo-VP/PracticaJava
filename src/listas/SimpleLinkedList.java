@@ -136,17 +136,19 @@ public class SimpleLinkedList <E> {
 		}
 		
 		//mayor
-		public int obtenerMayor() {
+		public Estudiante obtenerMayor() {
 			@SuppressWarnings("unchecked")
 			Node<Estudiante> tmp = (Node<Estudiante>) head; // Se usa Node tipo Estudiante
 			int mayor=0;
+			Estudiante estudiante = null;
 			while(tmp != null) {
 				if(tmp.getElement().getEdad()>mayor) {
 					mayor=tmp.getElement().getEdad();
+					estudiante = tmp.getElement();
 				}
 				tmp = tmp.getNext();
 			}
-			return mayor;
+			return estudiante;
 		}
 		
 		//mayores de 20 años
