@@ -21,14 +21,15 @@ public class AppQueue {
 		cola.addLast("enrique");
 		
 		// Agregar dato en la posicion 3
-		cola.add(3, "carlitos");
+		//cola.add(3, "carlitos");
 		
 		// Remover
 		cola.remove(3);
+	
 		
 		// Obtener los datos que se desea dato de la posicion 1
-		Object datoObtenido = cola.get(1);
-		System.out.println("Dato posicion 1: " + datoObtenido);
+		//Object datoObtenido = cola.get(1);
+		//System.out.println("Dato posicion 1: " + datoObtenido);
 		
 		// Agregar datos sobre los datos iniciales
 		cola.add(2, "cambio por jorge");
@@ -43,12 +44,12 @@ public class AppQueue {
 		
 		// Cola con array genérico
 		// Crear objeto
-		Queue<Integer> s = new ArrayQueue<>();
-		s.enqueue(8);
-		s.enqueue(9);
-		s.enqueue(10);
+		//Queue<Integer> s = new ArrayQueue<>();
+		//s.enqueue(8);
+		//s.enqueue(9);
+		//s.enqueue(10);
 		
-		System.out.println(s.first());
+		//System.out.println(s.first());
 	}
 
 }
